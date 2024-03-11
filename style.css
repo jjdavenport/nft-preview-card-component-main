@@ -126,6 +126,10 @@ main p{
     color: var(--icon-row-right-font-color);
 }
 
+.right {
+    justify-content: flex-end;
+}
+
 .right img{
     height: 18px;
     width: 18px;
