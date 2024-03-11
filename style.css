@@ -19,6 +19,7 @@ body {
     --icon-row-right-font-color: hsl(215, 51%, 70%); 
     --p-font-color: hsl(215, 32%, 27%);
     --hover-background-color: hsl(178, 100%, 50%, 0.5); 
+    --section-line-color: hsl(215, 32%, 27%);
 }
 
 .container {
@@ -35,10 +36,11 @@ main {
     width: 300px;
     background-color: var(--main-background-color);
     padding: 1.5rem;
-    border-radius: 2%;
+    border-radius: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 main img{
@@ -81,7 +83,8 @@ main img{
 
 main h1 {
     color: var(--white-font-color);
-    font-size: 26px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 main h1:hover{
@@ -102,11 +105,12 @@ main p{
 .left, .right{
     display: flex;
     align-items: center;
+    width: 50%;
 }
 
 .icon-row h2, h3{
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .icon-row h2{
@@ -122,25 +126,36 @@ main p{
     color: var(--icon-row-right-font-color);
 }
 
-.icon-row img{
-    height: 2vh;
-    width: 2vw;
+.right img{
+    height: 18px;
+    width: 18px;
+    margin-right: 4%;
+}
+
+.left img {
+    height: 18px;
+    width: 10px;
+    margin-right: 4%;
 }
 
 section {
     display: grid;
     grid-template-columns: auto 2fr;
+    align-items: center;
     gap:4%;
+    padding-top: 4%;
+    border-top: 1px solid var(--section-line-color);
 }
 
 section h3{
     color: var(--icon-row-right-font-color);
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 section img{
-    height: 2vh;
-    width: 2vh;
+    height: 28px;
+    width: 28px;
     border: 1px solid var(--white-font-color);
     border-radius: 50%;
 }
