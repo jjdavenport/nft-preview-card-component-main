@@ -28,46 +28,75 @@
   </head>
   <body>
     <main>
-      <div class="center">
-        <div class="wrap">
-          <img src="./images/image-equilibrium.jpg" alt="main" />
-          <div class="hover">
-            <img src="./images/icon-view.svg" alt="view" />
+      <article class="card">
+        <div class="card__image-wrapper">
+          <img
+            src="./images/image-equilibrium.jpg"
+            alt="Equilibrium NFT preview image"
+            class="card__image"
+          />
+          <div class="card__image-hover" aria-hidden="true">
+            <img src="./images/icon-view.svg" alt="view icon" />
           </div>
         </div>
-      </div>
-      <h1>Equilibrium #3429</h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <div class="icon-row">
-        <div class="left">
-          <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
-              fill="#00FFF8"
-            />
-          </svg>
-          <h2>0.041 ETH</h2>
-        </div>
-        <div class="right">
-          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
-              fill="#8BACD9"
-            />
-          </svg>
-          <h3>3 days left</h3>
-        </div>
-      </div>
-      <section>
-        <img src="./images/image-avatar.png" alt="avatar" />
-        <h3>Creation of <span>Jules Wyvern</span></h3>
-      </section>
+        <header class="card__header">
+          <h1 class="card__title">Equilibrium #3429</h1>
+        </header>
+        <p class="card__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <section class="card__details" aria-label="Auction details">
+          <div class="card__details-left">
+            <svg
+              width="11"
+              height="18"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Ethereum icon"
+              class="card__icon"
+            >
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            <h2 class="card__price">0.041 ETH</h2>
+          </div>
+          <div class="card__details-right">
+            <svg
+              width="17"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Clock icon"
+              class="card__icon"
+            >
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            <p class="card__time-left">3 days left</p>
+          </div>
+        </section>
+        <section class="card__creator" aria-labelledby="creator-title">
+          <img
+            src="./images/image-avatar.png"
+            alt="Avatar of Jules Wyvern"
+            class="card__avatar"
+          />
+          <p id="creator-title" class="card__creator-name">
+            Creation of
+            <span class="card__creator-highlight">Jules Wyvern</span>
+          </p>
+        </section>
+      </article>
     </main>
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/jjdavenport">jjdavenport</a>.
-    </div>
+    </footer>
   </body>
 </html>

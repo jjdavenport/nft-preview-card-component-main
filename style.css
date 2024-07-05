@@ -43,7 +43,6 @@ main {
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow: hidden;
 }
 
@@ -53,18 +52,20 @@ main img {
   border-radius: 2%;
 }
 
-.center {
+.card {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
-.wrap {
+.card__image-wrapper {
   position: relative;
   height: 18.75rem;
   width: 18.75rem;
 }
 
-.hover {
+.card__image-hover {
   display: none;
   justify-content: center;
   align-items: center;
@@ -76,77 +77,77 @@ main img {
   border-radius: 2%;
 }
 
-.wrap:hover .hover {
+.card__image-wrapper:hover .card__image-hover {
   display: flex;
   cursor: pointer;
 }
 
-.hover img {
+.card__image-hover img {
   height: 3.125rem;
   width: 3.125rem;
 }
 
-main h1 {
+.card__title {
   color: var(--white-font-color);
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-main h1:hover {
+.card__title:hover {
   color: var(--icon-row-left-font-color);
   cursor: pointer;
 }
 
-main p {
+.card__description {
   color: var(--icon-row-right-font-color);
   font-weight: 300;
   font-size: 1rem;
 }
 
-.icon-row {
+.card__details {
   display: flex;
   justify-content: space-between;
 }
 
-.left,
-.right {
+.card__details-left,
+.card__details-right {
   display: flex;
   align-items: center;
   width: 50%;
 }
 
-.icon-row h2,
-h3 {
+.card__price,
+.card__time-left {
   font-size: 1rem;
   font-weight: 400;
 }
 
-.icon-row h2 {
+.card__price {
   color: var(--icon-row-left-font-color);
 }
 
-.icon-row h3 {
+.card__time-left {
   color: var(--icon-row-right-font-color);
 }
 
-.icon-row p {
+.card__details-right p {
   font-size: 1.125rem;
   color: var(--icon-row-right-font-color);
 }
 
-.right {
+.card__details-right {
   justify-content: flex-end;
 }
 
-.right svg {
+.card__details-right svg {
   margin-right: 0.25rem;
 }
 
-.left svg {
+.card__details-left svg {
   margin-right: 0.25rem;
 }
 
-section {
+.card__creator {
   display: grid;
   grid-template-columns: auto 2fr;
   align-items: center;
@@ -155,24 +156,24 @@ section {
   border-top: 0.0625rem solid var(--section-line-color);
 }
 
-section h3 {
+.card__creator-name {
   color: var(--icon-row-right-font-color);
   font-size: 1rem;
   font-weight: 300;
 }
 
-section img {
+.card__avatar {
   height: 1.75rem;
   width: 1.75rem;
   border: 0.0625rem solid var(--white-font-color);
   border-radius: 50%;
 }
 
-section span {
+.card__creator-highlight {
   color: var(--white-font-color);
 }
 
-section span:hover {
+.card__creator-highlight:hover {
   color: var(--icon-row-left-font-color);
   cursor: pointer;
 }
